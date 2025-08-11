@@ -1,7 +1,9 @@
-function CardBody() {
+import { CardBodyType } from "./cardType";
+
+function CardBody({ className, children }: CardBodyType) {
     return (
-        <div className="p-4 bg-white border-b-1">
-            <p className="text-gray-700">This is the body of the card.</p>
+        <div className={`${className}`}>
+            {children}
         </div>
     );
 }

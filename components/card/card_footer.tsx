@@ -1,7 +1,9 @@
-function CardFooter() {
+import { CardFooterType } from "./cardType";
+
+function CardFooter({ className, children }: CardFooterType) {
     return (
-        <div className="flex justify-between items-center p-4 bg-gray-100 border-t-1">
-            <p className="text-gray-600">© 2025 Neo Frank Uy. All Rights Reserved.</p>
+        <div className={`${className}`}>
+            {children}
         </div>
     );
 }
